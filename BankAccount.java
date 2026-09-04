@@ -9,12 +9,14 @@ public void deposit(double amount) {
 // TODO: add the amount to the balance
 }
 public boolean withdraw(double amount) {
-
-if(this.balance - amount >=50){
-    this.balance = this.balance - amount;
-    return true;
+if(this.balance - amount >52){
+  
+        this.balance = this.balance - amount -2;
+        return true
+    
 }
 return false;
+  
 }
 public String getAccountSummary() {
 return accountHolder + ": $" + balance;
